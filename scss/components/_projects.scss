@@ -1,0 +1,38 @@
+%projects {
+  padding: 1em;
+  background-color: #fff;
+  transition: background-color .4s, color .4s;
+}
+
+.projects {
+  &--ubuntu {
+    @extend %projects;
+
+    &:hover {
+      background-color: #e95420;
+      color: #fff;
+    }
+  }
+
+  &--juju {
+    @extend %projects;
+
+    &:hover {
+      background-color: #002835;
+      color: #fff;
+    }
+  }
+
+  &--gorillaz {
+    @extend %projects;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__role {
+    font-size: .85em;
+  }
+}

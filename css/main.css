@@ -1,0 +1,55 @@
+.grid {
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.grid > * {
+  flex: 1 0 5em;
+  margin: 0.5em; }
+
+body {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1.5;
+  color: #222; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.8;
+  margin-top: 0; }
+
+a {
+  color: #222;
+  text-decoration: none; }
+
+.projects--ubuntu, .projects--juju, .projects--gorillaz {
+  padding: 1em;
+  background-color: #fff;
+  transition: background-color .4s, color .4s; }
+
+.projects--ubuntu:hover {
+  background-color: #e95420;
+  color: #fff; }
+.projects--juju:hover {
+  background-color: #002835;
+  color: #fff; }
+.projects--gorillaz:hover {
+  background-color: #000;
+  color: #fff; }
+.projects__role {
+  font-size: .85em; }
+
+.hero {
+  padding: 2em 1em 0; }
+
+.u-no-margin--bottom {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */
