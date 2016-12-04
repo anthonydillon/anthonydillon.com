@@ -1,13 +1,13 @@
-.grid {
-  max-width: 760px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto; }
+@media only screen and (min-width: 420px) {
+  .grid {
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
 
-.grid > * {
-  flex: 1 0 5em;
-  margin: 0.5em; }
-
+  .grid > * {
+    flex: 1 0 5em;
+    margin: 0.5em; } }
 body {
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -32,7 +32,8 @@ a {
 .projects--ubuntu, .projects--juju, .projects--gorillaz {
   padding: 1em;
   background-color: #fff;
-  transition: background-color .4s, color .4s; }
+  transition: background-color .4s, color .4s;
+  display: block; }
 
 .projects--ubuntu:hover {
   background-color: #e95420;

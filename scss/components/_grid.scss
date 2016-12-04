@@ -1,11 +1,13 @@
-.grid {
-  max-width: 760px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
+@media only screen and (min-width: 420px) {
+  .grid {
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 
-.grid > * {
-  flex: 1 0 5em;
-  margin: 0.5em;
+  .grid > * {
+    flex: 1 0 5em;
+    margin: 0.5em;
+  }
 }
