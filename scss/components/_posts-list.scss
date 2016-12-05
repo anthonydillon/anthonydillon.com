@@ -1,0 +1,8 @@
+.posts-list {
+  list-style: none;
+  padding-left: 0;
+
+  &__item {
+    border-bottom: 1px solid #aaa;
+  }
+}
