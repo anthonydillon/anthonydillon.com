@@ -1,8 +1,12 @@
 %projects {
-  padding: 1em;
+  padding: 1em 1em 1em 0;
   background-color: #fff;
-  transition: background-color .4s, color .4s;
+  transition: all .4s;
   display: block;
+
+  &:hover {
+    padding-left: 1em;
+  }
 }
 
 .projects {
@@ -35,5 +39,10 @@
 
   &__role {
     font-size: .85em;
+    margin: 0;
+  }
+
+  &__title {
+    margin-bottom: 0;
   }
 }
