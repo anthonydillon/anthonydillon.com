@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    'sidenav  navbar  main'
+    'sidenav  navbar  main'
+    'sidenav  navbar  main';
+  grid-template-columns: 270px 1fr;
+  grid-template-rows: 1fr min-content;
+  height: 100vh;
+  overflow: hidden; // make sure panels transformed off-screen don't make the layout scroll
+  width: 100vw;
+}
+
+.l-navbar {
+  grid-area: navbar;
+  padding: 1rem;
+}
+
+.l-main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 2rem;
+}

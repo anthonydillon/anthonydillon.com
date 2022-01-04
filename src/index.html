@@ -1,0 +1,26 @@
+---
+title: "Thoughts from Anthony Dillon"
+layout: "base.html"
+---
+
+<div class="l-main">
+  <h1>All</h1>
+  <p>
+    I'm a software developer, and I'm passionate about building things that
+    people love. I'm currently working on a project called
+  </p>
+  <p>
+    I have a passion for learning and teaching, and I'm always looking for
+    new ways to improve myself. I'm a big fan of the leanweb community.
+  </p>
+
+  <hr />
+
+  {% for post in collections.post reversed %}
+  <a href='{{post.url}}' class="blog-single">
+    <p class="title">{{ post.data.title }}</p>
+
+    <p class="description">{{ post.data.description }}</p>
+  </a>
+  {% endfor %}
+</div>
