@@ -3,7 +3,6 @@
   grid-template-areas: "navbar  main" "navbar  main" "navbar  main";
   grid-template-columns: 270px 1fr;
   grid-template-rows: 1fr min-content;
-  height: 100vh;
 }
 
 .l-navbar {
@@ -14,7 +13,7 @@
 .l-main {
   grid-area: main;
   padding: 2rem;
-  max-width: 72rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -22,6 +21,8 @@
   background-color: #F1F1F1;
   border-right: 1px solid #efefef;
   padding: 1rem 0;
+  position: fixed;
+  height: calc(100vh - 2rem);
 }
 .p-navigation .p-navigation__nav {
   display: flex;
@@ -57,6 +58,14 @@
 }
 .p-navigation .p-navigation__link:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.p-article {
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+.p-article li {
+  margin-bottom: 0.5rem;
 }
 
 body {

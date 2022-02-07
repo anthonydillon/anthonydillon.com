@@ -6,7 +6,6 @@
     'navbar  main';
   grid-template-columns: 270px 1fr;
   grid-template-rows: 1fr min-content;
-  height: 100vh;
 }
 
 .l-navbar {
@@ -17,6 +16,6 @@
 .l-main {
   grid-area: main;
   padding: 2rem;
-  max-width: 72rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
