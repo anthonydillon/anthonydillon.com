@@ -2,7 +2,6 @@
   background-color: #F1F1F1;
   border-right: 1px solid #efefef;
   padding: 1rem 0;
-  overflow: hidden;
 
   .p-navigation__nav {
     display: flex;
@@ -10,11 +9,10 @@
     justify-content: space-between;
     align-items: flex-start;
     height: calc(100% - 80px);
-    width: 100%;
   }
 
   .p-navigation__image {
-    width: 85%;
+    width: 90%;
   }
 
   .p-navigation__items {
@@ -41,7 +39,7 @@
     text-decoration: none;
     display:block;
     padding: 0.5rem 1rem;
-    width: 100%;
+    width: calc(100% - 2rem);
 
     &:hover {
       background-color: rgba(0,0,0,.05);
