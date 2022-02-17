@@ -2,8 +2,12 @@
   background-color: #F1F1F1;
   border-right: 1px solid #efefef;
   padding: 1rem 0;
-  position: fixed;
   height: calc(100vh - 2rem);
+
+  @media screen and (max-width: $navigation-threshold) {
+    padding: 3rem 0;
+    height: calc(100vh - 6rem);
+  }
 
   .p-navigation__nav {
     display: flex;
@@ -15,6 +19,7 @@
 
   .p-navigation__image {
     width: 90%;
+    max-width: 200px;
   }
 
   .p-navigation__items {
@@ -46,5 +51,12 @@
     &:hover {
       background-color: rgba(0,0,0,.05);
     }
+  }
+
+  .p-navigation__toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
   }
 }

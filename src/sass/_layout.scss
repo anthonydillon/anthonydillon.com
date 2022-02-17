@@ -6,11 +6,22 @@
     'navbar  main';
   grid-template-columns: 270px 1fr;
   grid-template-rows: 1fr min-content;
+
+  @media screen and (max-width: $navigation-threshold) {
+    grid-template-columns: 0px 1fr;
+
+    &.is-open {
+      grid-template-columns: 1fr 0;
+    }
+  }
 }
 
 .l-navbar {
   grid-area: navbar;
-  padding: 1rem;
+
+  @media screen and (max-width: $navigation-threshold) {
+    overflow: hidden;
+  }
 }
 
 .l-main {
