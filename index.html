@@ -10,7 +10,13 @@
 </head>
 <body>
   <div class="layout">
-    <header id="navigation" class="p-navigation l-sidenav">
+    <header id="navigation" class="p-navigation l-navbar">
+  <div class="p-navigation__toggle">
+    <button class="p-navigation__toggle-button" type="button" aria-label="Toggle navigation">
+      Toogle side navigation
+    </button>
+  </div>
+
   <div class="p-navigation__logo">
     <a class="p-navigation__item" href="#">
       <img class="p-navigation__image" src="https://anthonydillon.com/images/ad_logo.jpg" alt="" width="95">
@@ -50,7 +56,16 @@
   </nav>
 </header>
 
-    <main>
+<script>
+  var toggle = document.querySelector('.p-navigation__toggle');
+  var layout = document.querySelector('.layout');
+
+  toggle.addEventListener('click', function() {
+    layout.classList.toggle('is-open');
+  });
+</script>
+
+    <main class="l-main">
 <div class="l-main">
   <h1>All</h1>
   <p>
