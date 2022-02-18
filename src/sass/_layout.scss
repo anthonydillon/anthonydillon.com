@@ -6,12 +6,17 @@
     'navbar  main';
   grid-template-columns: 270px 1fr;
   grid-template-rows: 1fr min-content;
+  overflow: hidden;
 
   @media screen and (max-width: $navigation-threshold) {
     grid-template-columns: 0px 1fr;
 
     &.is-open {
       grid-template-columns: 1fr 0;
+
+      .l-main {
+        display: none;
+      }
     }
   }
 }

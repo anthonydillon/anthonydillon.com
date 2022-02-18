@@ -4,11 +4,6 @@
   padding: 1rem 0;
   height: calc(100vh - 2rem);
 
-  @media screen and (max-width: $navigation-threshold) {
-    padding: 3rem 0;
-    height: calc(100vh - 6rem);
-  }
-
   .p-navigation__nav {
     display: flex;
     flex-direction: column;
@@ -54,9 +49,26 @@
   }
 
   .p-navigation__toggle {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 1rem;
+    display: none;
+
+    @media screen and (max-width: $navigation-threshold) {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .p-navigation__toggle-button {
+      background: transparent;
+      padding: .6rem .5rem .5rem;
+      border: 1px solid #999;
+      border-radius: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(0,0,0,.05);
+      }
+    }
   }
 }
