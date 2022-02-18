@@ -4,6 +4,10 @@
   padding: 1rem 0;
   height: calc(100vh - 2rem);
 
+  @media screen and (min-width: $navigation-threshold) {
+    position: fixed;
+  }
+
   .p-navigation__nav {
     display: flex;
     flex-direction: column;
