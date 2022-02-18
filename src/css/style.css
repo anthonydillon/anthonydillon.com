@@ -99,7 +99,6 @@
 }
 
 .p-article {
-  line-height: 1.5;
   margin-bottom: 4rem;
 }
 .p-article li {
@@ -111,6 +110,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   text-decoration: none;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */
