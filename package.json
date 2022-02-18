@@ -7,7 +7,7 @@
     "watch:sass": "sass --watch src/sass:src/css",
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass src/sass:src/css",
-    "build:eleventy": "env NODE_ENV=production npx eleventy --pathprefix 'anthonydillon.com'",
+    "build:eleventy": "env NODE_ENV=production npx eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass --parallel build:*"
   },
