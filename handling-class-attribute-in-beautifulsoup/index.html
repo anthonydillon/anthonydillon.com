@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering thoughts from Anthony Dillon</title>
-  <link rel="stylesheet" href="/anthonydillon.com/css/style.css" />
-  <link rel="shortcut icon" href="https://anthonydillon.com/favicon.png">
-</head>
-<body>
-  <div class="layout">
-    <header id="navigation" class="p-navigation l-navbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling “class” attribute in Beautifulsoup</title>
+    <link rel="stylesheet" href="/anthonydillon.com/css/style.css" />
+    <link rel="shortcut icon" href="https://anthonydillon.com/favicon.png">
+  </head>
+  <body>
+    <div class="layout">
+      <header id="navigation" class="p-navigation l-navbar">
   <div class="p-navigation__toggle">
     <button class="p-navigation__toggle-button" type="button" aria-label="Toggle navigation">
       Menu
@@ -25,7 +24,7 @@
 
   <nav class="p-navigation__nav" aria-label="Categories navigation">
     <ul class="p-navigation__items">
-      <li class="p-navigation__item" aria-current="page">
+      <li class="p-navigation__item" >
         <a class="p-navigation__link" href="/engineering">Engineering</a>
       </li>
       <li class="p-navigation__item" >
@@ -62,29 +61,17 @@
   </script>
 </header>
 
-    <main class="l-main">
-<div class="l-main">
-  <h1>Engineering</h1>
-  <p>
-    As a developer engineering solutions for over 20 years I have thoughts on the topic and ways I prefer to work. I do less day to day coding but I feel I have a good sense for complexity and helping to define a elegant solution.
-  </p>
-
-  <hr />
-
-  
-  <a href='/anthonydillon.com/surprising-css-selectors-you-can-use-today/' class="blog-single">
-    <p class="title">Surprising CSS selectors you can use today</p>
-
-    <p class="description"></p>
-  </a>
-  
-  <a href='/anthonydillon.com/handling-class-attribute-in-beautifulsoup/' class="blog-single">
-    <p class="title">Handling “class” attribute in Beautifulsoup</p>
-
-    <p class="description"></p>
-  </a>
-  
-</div></main>
-  </div>
-</body>
+      <main class="l-main p-article">
+        <h1>Handling “class” attribute in Beautifulsoup</h1>
+        <article><p>Using the docs it can be difficult to spot the syntax to find an element with a class. Here is how you refine your search to the elements with my-image class.</p>
+<pre><code>img = soup.findAll(&quot;img&quot;, { &quot;class&quot; : &quot;my-image&quot; })
+</code></pre>
+<p>Further reading:</p>
+<ul>
+<li><a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup Documentation</a></li>
+</ul>
+</article>
+      </main>
+    </div>
+  </body>
 </html>
