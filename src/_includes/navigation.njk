@@ -6,33 +6,33 @@
   </div>
 
   <div class="p-navigation__logo">
-    <a class="p-navigation__item" href="{{ '/' | url }}">
-      <img class="p-navigation__image" src="https://anthonydillon.com/images/ad_logo.jpg" alt="" width="95">
+    <a class="p-navigation__item" href="/">
+      <img class="p-navigation__image" src="/img/logo.jpg" alt="" width="95">
     </a>
   </div>
 
   <nav class="p-navigation__nav" aria-label="Categories navigation">
     <ul class="p-navigation__items">
       <li class="p-navigation__item" {% if page.url == "/engineering/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/engineering/' | url }}">Engineering</a>
+        <a class="p-navigation__link" href="/engineering/">Engineering</a>
       </li>
       <li class="p-navigation__item" {% if page.url == "/management/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/management/' | url }}">Management</a>
+        <a class="p-navigation__link" href="/management/">Management</a>
       </li>
       <li class="p-navigation__item" {% if page.url == "/cooking/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/cooking/' | url }}">Cooking</a>
+        <a class="p-navigation__link" href="/cooking/">Cooking</a>
       </li>
       <li class="p-navigation__item" {% if page.url == "/ideas/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/ideas/' | url }}">Ideas</a>
+        <a class="p-navigation__link" href="/ideas/">Ideas</a>
       </li>
     </ul>
 
     <ul class="p-navigation__items">
       <li class="p-navigation__item" {% if page.url == "/my-work/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/my-work/' | url }}">My work</a>
+        <a class="p-navigation__link" href="/my-work/">My work</a>
       </li>
       <li class="p-navigation__item" {% if page.url == "/about/" %}aria-current="page"{% endif %}>
-        <a class="p-navigation__link" href="{{ '/about/' | url }}">About</a>
+        <a class="p-navigation__link" href="/about/">About</a>
       </li>
       <li class="p-navigation__item">
         <a class="p-navigation__link" href="https://twitter.com/anthonydillon">@anthonydillon on Twitter</a>
