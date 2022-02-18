@@ -12,7 +12,7 @@
       <header id="navigation" class="p-navigation l-navbar">
   <div class="p-navigation__toggle">
     <button class="p-navigation__toggle-button" type="button" aria-label="Toggle navigation">
-      Toogle side navigation
+      Menu
     </button>
   </div>
 
@@ -53,16 +53,16 @@
       </li>
     </ul>
   </nav>
+  <script>
+    var toggle = document.querySelector('.p-navigation__toggle-button');
+    var layout = document.querySelector('.layout');
+
+    toggle.addEventListener('click', function() {
+      layout.classList.toggle('is-open');
+      toggle.innerHTML = layout.classList.contains('is-open') ? 'Close' : 'Menu';
+    });
+  </script>
 </header>
-
-<script>
-  var toggle = document.querySelector('.p-navigation__toggle');
-  var layout = document.querySelector('.layout');
-
-  toggle.addEventListener('click', function() {
-    layout.classList.toggle('is-open');
-  });
-</script>
 
       <main class="l-main p-article">
         <h1>Leading distributed teams</h1>
