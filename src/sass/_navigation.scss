@@ -30,7 +30,7 @@
   .p-navigation__item {
     border-left: 3px solid transparent;
 
-    &.is-selected {
+    &[aria-current]{
       border-left: 3px solid #e1283b;
 
       .p-navigation__link {

@@ -63,10 +63,10 @@
 .p-navigation .p-navigation__item {
   border-left: 3px solid transparent;
 }
-.p-navigation .p-navigation__item.is-selected {
+.p-navigation .p-navigation__item[aria-current] {
   border-left: 3px solid #e1283b;
 }
-.p-navigation .p-navigation__item.is-selected .p-navigation__link {
+.p-navigation .p-navigation__item[aria-current] .p-navigation__link {
   color: #e1283b;
 }
 .p-navigation .p-navigation__link {
