@@ -1,0 +1,21 @@
+---
+title: "Ideas from Anthony Dillon"
+layout: "base.html"
+---
+
+<div class="l-main">
+  <h1>Ideas</h1>
+  <p>
+    I have ideas like everyone but I rarely implement them. Therefore, I will share ideas here that I have come up with.
+  </p>
+
+  <hr />
+
+  {% for post in collections.post reversed %}
+  <a href='{{ post.url | url }}' class="blog-single">
+    <p class="title">{{ post.data.title }}</p>
+
+    <p class="description">{{ post.data.description }}</p>
+  </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,21 @@
+---
+title: "Mangement thoughts from Anthony Dillon"
+layout: "base.html"
+---
+
+<div class="l-main">
+  <h1>Management</h1>
+  <p>
+    I a manager of enginnering teams for many years. I am always learning and growning as a leader but here are some things I have learnt so far.
+  </p>
+
+  <hr />
+
+  {% for post in collections.post reversed %}
+  <a href='{{ post.url | url }}' class="blog-single">
+    <p class="title">{{ post.data.title }}</p>
+
+    <p class="description">{{ post.data.description }}</p>
+  </a>
+  {% endfor %}
+</div>
