@@ -11,7 +11,7 @@ layout: "base.html"
 
   <hr />
 
-  {% for post in collections.post reversed %}
+  {% for post in collections.cooking reversed %}
   <a href='{{ post.url | url }}' class="blog-single">
     <p class="title">{{ post.data.title }}</p>
 

@@ -1,5 +1,7 @@
 ---
-tags: post
+tags:
+  - management
+  - post
 title: Leading distributed teams
 layout: article.html
 ---
