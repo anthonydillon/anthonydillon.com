@@ -37,7 +37,7 @@ CSS3 selectors dawned a new era of capabilities in CSS, giving us a bunch of new
 
 ```css
 a[href^="http"] {
-   background: <span class="token url">url(external-icon.svg) no-repeat;
+   background: url(external-icon.svg) no-repeat;
    padding-left: 10px;
 }
 ```
@@ -176,7 +176,7 @@ See http://caniuse.com/#feat=css-featurequeries
 This is one feature I’ve heard nothing about. Only joking! It’s talked about in hundreds of blog posts and conferences. It’s a fantastic tool to position elements either stacked horizontally or vertically, giving us the ability to easily centre elements or make elements all the same height. It also allows us to change the order in which the elements are displayed on the page. Have you ever been asked to swap the order of the image and text of a section when on small screen. I have &mdash; flexbox to the rescue.
 
 ```css
-@media only <span class="token function">min-width(768px) {
+@media only min-width(768px) {
   .row {
     display: flex;
     flex-direction: column-reverse;
