@@ -28,7 +28,7 @@ img {
 
 So while this doesn’t cover all bases; it’s enough to let us drop the dirty hacks and use progressive enhancement instead. After all, it’s not the end of the world if IE users see a simple alpha transparent overlay instead of a blurred version.
 
-See http://caniuse.com/#feat=css-filters (WebKit prefix)
+See [http://caniuse.com/#feat=css-filters](http://caniuse.com/#feat=css-filters) (WebKit prefix)
 
 ## CSS3 selectors – 97.73% browser support
 CSS3 selectors dawned a new era of capabilities in CSS, giving us a bunch of new methods to select with logic. The more interesting selectors are explained below.
@@ -74,7 +74,7 @@ Will match:
 Won’t match:
 ```html
 <div> </div>
-
+```
 The `:empty` pseudo selector is useful for hiding empty elements that can cause spacing as they have padding. It can also hide the border of an empty list item. `:not()`, is a negative selector. It takes an element selector as a parameter. If the match is false then styles are applied.
 
 ```css
@@ -93,7 +93,7 @@ h2 ~ p {
 
 You may have been under the impression, as I was, that these selectors were not well supported. Perhaps you thought either that you could not use them, or would require some thought into a polyfill or progressive enhancement trick to use them. However, I was surprised to discover that CSS3 selectors have 97.73% global support, including IE8 and up.
 
-See http://caniuse.com/#feat=css-sel3
+See [http://caniuse.com/#feat=css-sel3](http://caniuse.com/#feat=css-sel3)
 
 ## Calc() – 80.75% browser support
 This is one of my favourite new features to CSS. `Calc()` gives users the ability to perform mathematical calculations using different units within CSS. For example, positioning a background icon to the right of a input field.
@@ -117,7 +117,7 @@ That will do nicely. Also if you wanted a floating sidebar to fill up the entire
 
 With a nice healthy 80.75% global support and no browser prefixes required, it’s time to add this to your arsenal of selectors.
 
-See http://caniuse.com/#feat=calc
+See [http://caniuse.com/#feat=calc](http://caniuse.com/#feat=calc)
 
 ## CSS animation – 90.29% browser support
 Ever since the death of Flash we have been looking for a replacement to animation on the web, luckily CSS animations became available very quickly after. As with all new features I was curious, but resistant to use in production without carefully considering an appropriate fallback.
@@ -149,7 +149,7 @@ If you want to bring your site or web app to life by adding some subtle animatio
 
 **Pro tip**: Do not animate a positional style such as `top` and `margin`. This will cause a page repaint and in some cases require the browser to calculate the positions of the visible elements on the page.
 
-See http://caniuse.com/#feat=css-animation
+See [http://caniuse.com/#feat=css-animation](http://caniuse.com/#feat=css-animation)
 
 ## @supports rule – 67.85% browser support
 `@supports` gives us the ability to check if a feature is supported and conditionally style elements based on the browser’s functionality. For example, you can use supports to detect if flexbox is supported by that particular browser and if not swap back to floats.
@@ -170,7 +170,7 @@ One of the gotchas with this feature is most of the time we want to test an olde
 
 At the moment feature queries have 67.85% support. While this is not ideal, it does cover the latest versions of the evergreen browsers, which is a good start. The only browsers lacking support are IE and Opera Mini. This has the added benefit of meaning we can begin to drop the extra dependence on Modernizr.
 
-See http://caniuse.com/#feat=css-featurequeries
+See [http://caniuse.com/#feat=css-featurequeries](http://caniuse.com/#feat=css-featurequeries)
 
 ## Flexbox – 95.4% browser support
 This is one feature I’ve heard nothing about. Only joking! It’s talked about in hundreds of blog posts and conferences. It’s a fantastic tool to position elements either stacked horizontally or vertically, giving us the ability to easily centre elements or make elements all the same height. It also allows us to change the order in which the elements are displayed on the page. Have you ever been asked to swap the order of the image and text of a section when on small screen. I have &mdash; flexbox to the rescue.
@@ -186,7 +186,7 @@ This is one feature I’ve heard nothing about. Only joking! It’s talked about
 
 That said, I was a little wary of using it for anything important because, like all of these things, I didn’t believe its support was good enough. Flexbox proudly boasts a huge 95.4% browser support, spanning all the latest browsers, including Opera Mini. IE9 and below will miss out but when using it for aesthetics, that’s probably ok.
 
-See http://caniuse.com/#feat=flexbox
+See [http://caniuse.com/#feat=flexbox](http://caniuse.com/#feat=flexbox)
 
 ## 3D transforms – 89.87% browser support
 This feature allows us to position an element in the third dimension. This feature also includes the perspective property, allowing us to set the z-index of a 3D element.
@@ -210,7 +210,7 @@ A quick example of a card that would spin and flip as you hover over it.
 }
 ```
 
-See http://caniuse.com/#feat=transforms3d
+See [http://caniuse.com/#feat=transforms3d](http://caniuse.com/#feat=transforms3d)
 
 ## In conclusion
 I read a lot of blog posts and listen to a lot of podcasts all about frontend web development but did not realise how important it was to read through the features documented on Can I use. Truly, hats off to the people working on the site.
