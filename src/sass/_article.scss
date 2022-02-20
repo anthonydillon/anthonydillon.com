@@ -4,4 +4,27 @@
   li {
     margin-bottom: .5rem;
   }
+
+  pre {
+    background-color: rgba(0,0,0,.03);
+    color: #111;
+    display: block;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    overflow: auto;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    text-shadow: none;
+    white-space: pre;
+
+    code {
+      background: none;
+      box-shadow: none;
+      display: inline-block;
+      line-height: 1.5rem;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+  }
 }

@@ -34,4 +34,8 @@
   padding: 2rem;
   max-width: 50rem;
   margin: 0 auto;
+
+  @media screen and (max-width: $navigation-threshold) {
+    max-width: calc(100vw - 4rem);
+  }
 }
