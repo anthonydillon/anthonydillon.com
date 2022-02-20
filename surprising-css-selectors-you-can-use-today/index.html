@@ -83,7 +83,7 @@
 <p>CSS3 selectors dawned a new era of capabilities in CSS, giving us a bunch of new methods to select with logic. The more interesting selectors are explained below.</p>
 <p><code>[foo^=&quot;bar&quot;]</code>, the carat symbol is used as a regular expression to select attributes starting with <code>bar</code> in this case. A simple example of this features usage is:</p>
 <pre><code class="language-css">a[href^=&quot;http&quot;] {
-   background: &lt;span class=&quot;token url&quot;&gt;url(external-icon.svg) no-repeat;
+   background: url(external-icon.svg) no-repeat;
    padding-left: 10px;
 }
 </code></pre>
@@ -179,7 +179,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 <p>See http://caniuse.com/#feat=css-featurequeries</p>
 <h2>Flexbox – 95.4% browser support</h2>
 <p>This is one feature I’ve heard nothing about. Only joking! It’s talked about in hundreds of blog posts and conferences. It’s a fantastic tool to position elements either stacked horizontally or vertically, giving us the ability to easily centre elements or make elements all the same height. It also allows us to change the order in which the elements are displayed on the page. Have you ever been asked to swap the order of the image and text of a section when on small screen. I have — flexbox to the rescue.</p>
-<pre><code class="language-css">@media only &lt;span class=&quot;token function&quot;&gt;min-width(768px) {
+<pre><code class="language-css">@media only min-width(768px) {
   .row {
     display: flex;
     flex-direction: column-reverse;
