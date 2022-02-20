@@ -78,7 +78,7 @@
 }
 </code></pre>
 <p>So while this doesn’t cover all bases; it’s enough to let us drop the dirty hacks and use progressive enhancement instead. After all, it’s not the end of the world if IE users see a simple alpha transparent overlay instead of a blurred version.</p>
-<p>See http://caniuse.com/#feat=css-filters (WebKit prefix)</p>
+<p>See <a href="http://caniuse.com/#feat=css-filters">http://caniuse.com/#feat=css-filters</a> (WebKit prefix)</p>
 <h2>CSS3 selectors – 97.73% browser support</h2>
 <p>CSS3 selectors dawned a new era of capabilities in CSS, giving us a bunch of new methods to select with logic. The more interesting selectors are explained below.</p>
 <p><code>[foo^=&quot;bar&quot;]</code>, the carat symbol is used as a regular expression to select attributes starting with <code>bar</code> in this case. A simple example of this features usage is:</p>
@@ -108,11 +108,9 @@ li:nth-child(n2) {
 </code></pre>
 <p>Won’t match:</p>
 <pre><code class="language-html">&lt;div&gt; &lt;/div&gt;
-
-The `:empty` pseudo selector is useful for hiding empty elements that can cause spacing as they have padding. It can also hide the border of an empty list item. `:not()`, is a negative selector. It takes an element selector as a parameter. If the match is false then styles are applied.
-
-```css
-.menu:not(.is-hidden) {
+</code></pre>
+<p>The <code>:empty</code> pseudo selector is useful for hiding empty elements that can cause spacing as they have padding. It can also hide the border of an empty list item. <code>:not()</code>, is a negative selector. It takes an element selector as a parameter. If the match is false then styles are applied.</p>
+<pre><code class="language-css">.menu:not(.is-hidden) {
   // menu styles
 }
 </code></pre>
@@ -122,7 +120,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 }
 </code></pre>
 <p>You may have been under the impression, as I was, that these selectors were not well supported. Perhaps you thought either that you could not use them, or would require some thought into a polyfill or progressive enhancement trick to use them. However, I was surprised to discover that CSS3 selectors have 97.73% global support, including IE8 and up.</p>
-<p>See http://caniuse.com/#feat=css-sel3</p>
+<p>See <a href="http://caniuse.com/#feat=css-sel3">http://caniuse.com/#feat=css-sel3</a></p>
 <h2>Calc() – 80.75% browser support</h2>
 <p>This is one of my favourite new features to CSS. <code>Calc()</code> gives users the ability to perform mathematical calculations using different units within CSS. For example, positioning a background icon to the right of a input field.</p>
 <p>We have all been there, you add a background and position the icon to <code>right center</code>. Dust your hands, job done. You show the design and they ask for the icon to be 10px from the right of the element. Damn, its a background and you don’t want to create a new element just for a little icon. So you set the background position to <code>90% center</code>. This falls over at different viewport sizes. Calc to the rescue!</p>
@@ -137,7 +135,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 }
 </code></pre>
 <p>With a nice healthy 80.75% global support and no browser prefixes required, it’s time to add this to your arsenal of selectors.</p>
-<p>See http://caniuse.com/#feat=calc</p>
+<p>See <a href="http://caniuse.com/#feat=calc">http://caniuse.com/#feat=calc</a></p>
 <h2>CSS animation – 90.29% browser support</h2>
 <p>Ever since the death of Flash we have been looking for a replacement to animation on the web, luckily CSS animations became available very quickly after. As with all new features I was curious, but resistant to use in production without carefully considering an appropriate fallback.</p>
 <p>These days, CSS animations boast a healthy 90.29% support with a <code>-webkit</code> prefix. This means there is no reason not to add some small usability aids to your UI components, such as animating a notification into view to grab the user’s attention.</p>
@@ -162,7 +160,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 }
 </code></pre>
 <p><strong>Pro tip</strong>: Do not animate a positional style such as <code>top</code> and <code>margin</code>. This will cause a page repaint and in some cases require the browser to calculate the positions of the visible elements on the page.</p>
-<p>See http://caniuse.com/#feat=css-animation</p>
+<p>See <a href="http://caniuse.com/#feat=css-animation">http://caniuse.com/#feat=css-animation</a></p>
 <h2>@supports rule – 67.85% browser support</h2>
 <p><code>@supports</code> gives us the ability to check if a feature is supported and conditionally style elements based on the browser’s functionality. For example, you can use supports to detect if flexbox is supported by that particular browser and if not swap back to floats.</p>
 <pre><code class="language-css">@supports (display: flex) {
@@ -176,7 +174,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 <p>Pairing <code>@supports</code> with the not keyword allows for any type of logic within your CSS.</p>
 <p>One of the gotchas with this feature is most of the time we want to test an older browser for new feature support. The older browser itself will not support this type of query.</p>
 <p>At the moment feature queries have 67.85% support. While this is not ideal, it does cover the latest versions of the evergreen browsers, which is a good start. The only browsers lacking support are IE and Opera Mini. This has the added benefit of meaning we can begin to drop the extra dependence on Modernizr.</p>
-<p>See http://caniuse.com/#feat=css-featurequeries</p>
+<p>See <a href="http://caniuse.com/#feat=css-featurequeries">http://caniuse.com/#feat=css-featurequeries</a></p>
 <h2>Flexbox – 95.4% browser support</h2>
 <p>This is one feature I’ve heard nothing about. Only joking! It’s talked about in hundreds of blog posts and conferences. It’s a fantastic tool to position elements either stacked horizontally or vertically, giving us the ability to easily centre elements or make elements all the same height. It also allows us to change the order in which the elements are displayed on the page. Have you ever been asked to swap the order of the image and text of a section when on small screen. I have — flexbox to the rescue.</p>
 <pre><code class="language-css">@media only min-width(768px) {
@@ -187,7 +185,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
 }
 </code></pre>
 <p>That said, I was a little wary of using it for anything important because, like all of these things, I didn’t believe its support was good enough. Flexbox proudly boasts a huge 95.4% browser support, spanning all the latest browsers, including Opera Mini. IE9 and below will miss out but when using it for aesthetics, that’s probably ok.</p>
-<p>See http://caniuse.com/#feat=flexbox</p>
+<p>See <a href="http://caniuse.com/#feat=flexbox">http://caniuse.com/#feat=flexbox</a></p>
 <h2>3D transforms – 89.87% browser support</h2>
 <p>This feature allows us to position an element in the third dimension. This feature also includes the perspective property, allowing us to set the z-index of a 3D element.</p>
 <p>We’ve all seen awesome examples of 3D scenes using just CSS, but the level of browser support took me by surprise. With an impressive 89.87% global support with a single prefix of webkit, it is ready to be used today in production. I would suggest dropping the fallback, as in most cases the functionality of a 3D element will be aesthetic.</p>
@@ -205,7 +203,7 @@ The `:empty` pseudo selector is useful for hiding empty elements that can cause 
   transform: rotateX(180deg) rotateY(180deg);
 }
 </code></pre>
-<p>See http://caniuse.com/#feat=transforms3d</p>
+<p>See <a href="http://caniuse.com/#feat=transforms3d">http://caniuse.com/#feat=transforms3d</a></p>
 <h2>In conclusion</h2>
 <p>I read a lot of blog posts and listen to a lot of podcasts all about frontend web development but did not realise how important it was to read through the features documented on Can I use. Truly, hats off to the people working on the site.</p>
 <p>If you’re unsure how well a feature is supported, Can I use is the holy grail. I would recommend to any frontend dev to take the time to read through all the features, their support and known feature issues. There is no better shortcut to levelling up your CSS knowledge.</p>
