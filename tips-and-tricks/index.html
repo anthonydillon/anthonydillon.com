@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips and tricks</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/favicon.png">
+  </head>
+  <body>
+    <div class="layout">
+      <header id="navigation" class="p-navigation l-navbar">
+  <div class="p-navigation__toggle">
+    <button class="p-navigation__toggle-button" type="button" aria-label="Toggle navigation">
+      Menu
+    </button>
+  </div>
+
+  <div class="p-navigation__logo">
+    <a class="p-navigation__item" href="/" aria-label="Go to homepage">
+      <img class="p-navigation__image" src="/img/logo.jpg" alt="" width="95" />
+    </a>
+  </div>
+
+  <nav class="p-navigation__nav" aria-label="Categories navigation">
+    <ul class="p-navigation__items">
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/engineering/">Engineering</a>
+      </li>
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/management/">Management</a>
+      </li>
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/cooking/">Cooking</a>
+      </li>
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/ideas/">Ideas</a>
+      </li>
+    </ul>
+
+    <ul class="p-navigation__items">
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/my-work/">My work</a>
+      </li>
+      <li class="p-navigation__item" >
+        <a class="p-navigation__link" href="/about/">About</a>
+      </li>
+      <li class="p-navigation__item">
+        <a class="p-navigation__link" href="https://twitter.com/anthonydillon">@anthonydillon on Twitter</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    var toggle = document.querySelector('.p-navigation__toggle-button');
+    var layout = document.querySelector('.layout');
+
+    toggle.addEventListener('click', function() {
+      layout.classList.toggle('is-open');
+      toggle.innerHTML = layout.classList.contains('is-open') ? 'Close' : 'Menu';
+    });
+  </script>
+</header>
+
+      <main class="l-main p-article">
+        <h1>Tips and tricks</h1>
+        <article><p>So I think we all have handy tips and tricks we have picked up over the years so I thought I would write them down and show you. I fully expect no one to learn something but you never know. 🤷‍♂️</p>
+<h2>Google Meet</h2>
+<p><strong>ctrl + d</strong> - Toggles the audio on/off</p>
+<p><strong>ctrl + e</strong> - Toggles the camera on/off</p>
+<p>If you focus on the audio button, you can hit space to toggle the audio on and off.</p>
+<hr />
+<h2>Mattermost</h2>
+<p><strong>alt + [up|down]</strong> - This moved you up and down channels.</p>
+<p><strong>shift + tab</strong> will jump me to the last message in that channel.</p>
+<p><strong>ctrl + k</strong> - brings up the channel switcher</p>
+<p><strong>up</strong> - quick edit the last message</p>
+<hr />
+<h2>Gmail</h2>
+<p>Turn on keyboard shortcuts</p>
+<p><strong>x</strong> - selects emails and can select multiple</p>
+<p><strong>y</strong> - archives the selected emails</p>
+<p><strong>[</strong> and <strong>]</strong> - when in an email will archive and move in that direction</p>
+<p><strong>j</strong> and <strong>k</strong> - when in an email will jump to the next without archiving</p>
+<hr />
+<h2>Oh My Zsh + Git</h2>
+<p><strong>gcm</strong> - git commit main branch</p>
+<p><strong>ggl</strong> - git pull origin <code>{branch_name}</code></p>
+<p><strong>gcam</strong> - git commit -am</p>
+<p><strong>ggp</strong> - git push origin <code>{branch_name}</code></p>
+<p><strong>grbi</strong> - git rebase -i</p>
+<hr />
+<h2>Byobu</h2>
+<p><strong>shift + f2</strong> - create a horizontal split</p>
+<p><strong>ctrl + f2</strong> - create horizontal split</p>
+<p><strong>ctrl + d</strong> - close a window</p>
+<p><strong>shift + [up|down|left|right]</strong> - moves you around the panels</p>
+<p><strong>shift + alt + [up|down|left|right]</strong> - moved the dividers</p>
+<p><strong>f2</strong> - creates new window/tab</p>
+<p><strong>alt + [left+right]</strong> - switch tabs</p>
+<p><strong>f8</strong> - name tab</p>
+</article>
+      </main>
+    </div>
+  </body>
+</html>
