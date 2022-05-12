@@ -6,7 +6,7 @@ title: Refocusing on 1:1s
 layout: article.html
 ---
 
-I have been grappling with the desire to improve my 1:1 meetings recently. A a manager I want 1:1 meetings to focus on the needs of my reports and not be a status or progress report of their current work. But I don't want to burden anyone with preparing an agenda and no-agenda meeting can cause anxiety. So here are some areas I will try and touch on each week.
+I have been grappling with the desire to improve my 1:1 meetings recently. As a manager, I want 1:1 meetings to focus on the needs of my reports and not be a status or progress report of their current work. But I don't want to burden anyone with preparing an agenda and no-agenda meeting can cause anxiety. So here are some areas I will try and touch on each week.
 
 1. **Wellness**: Are you safe and well? You needn’t disclose personal information, but I’m here to listen, especially if work is impacting your well-being. Do you feel physically and psychologically safe, is your work/life balance compatible with your mental health?
 2. **Readiness**: Are you set up to succeed? Do you have what you need to meet your goals, starting with a clear understanding of what those are? What resources (material, support, or even just help and advice) might I provide that could help you be successful?
