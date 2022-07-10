@@ -4,7 +4,7 @@
     'navbar  main'
     'navbar  main'
     'navbar  main';
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 285px 1fr;
   grid-template-rows: 1fr min-content;
   overflow: hidden;
 
@@ -31,11 +31,29 @@
 
 .l-main {
   grid-area: main;
-  padding: 2rem;
-  max-width: 50rem;
-  margin: 0 auto;
+  padding: 1rem 2rem 0;
+  max-width: 60rem;
+  margin: 2rem auto;
 
   @media screen and (max-width: $navigation-threshold) {
     max-width: calc(100vw - 4rem);
+  }
+
+  .col-4 {
+    display: inline-block;
+    max-width: 30%;
+  }
+
+  .col-8 {
+    display: inline-block;
+    max-width: 59%;
+    margin-left: 10%;
+  }
+
+  img {
+    border: 0;
+    border-radius: 0.125rem;
+    height: auto;
+    max-width: 100%;
   }
 }

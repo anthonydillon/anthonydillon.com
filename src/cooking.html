@@ -3,19 +3,18 @@ title: "Cooking thoughts from Anthony Dillon"
 layout: "base.html"
 ---
 
-<div class="l-main">
-  <h1>Cooking</h1>
-  <p>
-    I am a keen cook and love learning new recipes and sharing tips and tricks. One day I hope to create a family cook book of my families favourites to share with my kids.
-  </p>
+<h1>Cooking</h1>
+<p>
+  I am a keen cook and love learning new recipes and sharing tips and tricks. One day I hope to create a family cook book of my families favourites to share with my kids.
+</p>
 
-  <hr />
+<hr />
 
+<h2>Posts</h2>
+<div class="p-cards">
   {% for post in collections.cooking reversed %}
-  <a href='{{ post.url | url }}' class="blog-single">
-    <p class="title">{{ post.data.title }}</p>
-
-    <p class="description">{{ post.data.description }}</p>
+  <a href='{{ post.url | url }}' class="p-card">
+    <h4 class="p-card__title">{{ post.data.title }}</h4>
   </a>
   {% endfor %}
 </div>

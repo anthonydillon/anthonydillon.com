@@ -1,0 +1,32 @@
+.p-breadcrumb {
+  margin-bottom: 1rem;
+
+  .p-breadcrumb__link,
+  .p-breadcrumb__link:active,
+  .p-breadcrumb__link:visited {
+    font-weight: 700;
+    text-decoration: none;
+    color: #272727;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    position: relative;
+
+    &:after {
+      content: "›";
+      position: absolute;
+      left: 95%;
+      top: -1rem;
+      font-weight: 100;
+      font-size: 2rem;
+      color: lighten(#272727, 40%);
+    }
+
+    &[aria-current="page"] {
+      color: #D83434;
+
+      &:after {
+        content: "";
+      }
+    }
+  }
+}

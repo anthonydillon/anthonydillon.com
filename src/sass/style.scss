@@ -1,13 +1,20 @@
-$navigation-threshold: 1200px;
+$navigation-threshold: 1000px;
 
 @import "layout";
 @import "navigation";
 @import "article";
+@import "typography";
+@import "breadcrumbs";
+@import "cards";
 
 body {
   display: block;
   margin: 0;
-  font-family: sans-serif;
-  text-decoration: none;
-  line-height: 1.5;
+}
+
+hr {
+  background-color: #F79D9D;
+  height: 4px;
+  border: none;
+  margin: 2.5rem 0;
 }

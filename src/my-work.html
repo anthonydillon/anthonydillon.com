@@ -3,19 +3,17 @@ title: "Work from Anthony Dillon"
 layout: "base.html"
 ---
 
-<div class="l-main">
-  <h1>My work</h1>
-  <p>
-    I have worked on many projects I am proud of. Here are some of my favourites. They range from past to current but I have learn't something new with each of them.
-  </p>
+<h1>My work</h1>
+<p>
+  I have worked on many projects I am proud of. Here are some of my favourites. They range from past to current but I have learn't something new with each of them.
+</p>
 
-  <hr />
+<hr />
 
-  {% for post in collections.my-work reversed %}
-  <a href='{{ post.url | url }}' class="blog-single">
-    <p class="title">{{ post.data.title }}</p>
-
-    <p class="description">{{ post.data.description }}</p>
+<h2>Posts</h2>
+<div class="p-cards">
+  <a href='{{ post.url | url }}' class="p-card">
+    <h4 class="p-card__title">{{ post.data.title }}</h4>
   </a>
   {% endfor %}
 </div>

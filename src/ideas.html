@@ -3,19 +3,18 @@ title: "Ideas from Anthony Dillon"
 layout: "base.html"
 ---
 
-<div class="l-main">
-  <h1>Ideas</h1>
-  <p>
-    I have ideas like everyone but I rarely implement them. Therefore, I will share ideas here that I have come up with.
-  </p>
+<h1>Ideas</h1>
+<p>
+  I have ideas like everyone but I rarely implement them. Therefore, I will share ideas here that I have come up with.
+</p>
 
-  <hr />
+<hr />
 
+<h2>Posts</h2>
+<div class="p-cards">
   {% for post in collections.ideas reversed %}
-  <a href='{{ post.url | url }}' class="blog-single">
-    <p class="title">{{ post.data.title }}</p>
-
-    <p class="description">{{ post.data.description }}</p>
+  <a href='{{ post.url | url }}' class="p-card">
+    <h4 class="p-card__title">{{ post.data.title }}</h4>
   </a>
   {% endfor %}
 </div>

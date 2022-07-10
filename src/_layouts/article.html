@@ -11,6 +11,10 @@
     <div class="layout">
       {% include navigation.njk %}
       <main class="l-main p-article">
+        <nav class="p-breadcrumb aria-label="breadcrumbs">
+          <a class="p-breadcrumb__link" href="/">Home</a>
+          <a class="p-breadcrumb__link" href="" aria-current="page">{{ title }}</a>
+        </nav>
         <h1>{{ title }}</h1>
         <article>{{ content | safe }}</article>
       </main>

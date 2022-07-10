@@ -1,0 +1,33 @@
+.p-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+
+  @media screen and (max-width: $navigation-threshold) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.p-card {
+  border-radius: 1rem;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  background: #F1F1F1;
+  text-decoration: none;
+
+  &__title {
+    margin-top: 0;
+    color: #000000;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #D83434;
+    transform: translateY(-0.25em);
+  }
+}

@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #272727;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 8px solid #FF8329;
+  height: 1.3em;
+  display: inline-block;
+  position:relative;
+
+  &:after {
+    content: "";
+    height: 8px;
+    width: 100%;
+    border-bottom: 8px solid #0016E0;
+    position: absolute;
+    top: 1.3em;
+    left: 1em;
+  }
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}

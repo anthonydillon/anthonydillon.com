@@ -8,6 +8,8 @@ layout: article.html
 
 So I think we all have handy tips and tricks we have picked up over the years so I thought I would write them down and show you. I fully expect no one to learn something but you never know. 🤷‍♂️
 
+<hr />
+
 ## Google Meet
 **ctrl + d** - Toggles the audio on/off
 

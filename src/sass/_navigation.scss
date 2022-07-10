@@ -1,10 +1,10 @@
 .p-navigation {
   background-color: #F1F1F1;
   border-right: 1px solid #efefef;
-  padding: 1rem 0;
-  height: calc(100vh - 2rem);
+  padding: 4rem 0;
+  height: calc(100vh - 8rem);
 
-  @media screen and (min-width: $navigation-threshold) {
+  @media screen and (min-width: $navigation-threshold + 1) {
     position: fixed;
   }
 
@@ -13,12 +13,26 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: calc(100% - 80px);
+    height: calc(100% - 3rem);
+    margin-top: 2rem;
+    padding: 0 2.5rem;
+  }
+
+  .p-navigation__logo {
+    padding: 0 2.5rem;
   }
 
   .p-navigation__image {
     width: 90%;
     max-width: 200px;
+  }
+
+  .p-navigation__icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    position: relative;
+    top: 3px;
+    padding-right: .5rem;
   }
 
   .p-navigation__items {
@@ -29,6 +43,7 @@
 
   .p-navigation__item {
     border-left: 3px solid transparent;
+    margin-bottom: .5rem;
 
     &[aria-current]{
       border-left: 3px solid #e1283b;
@@ -36,12 +51,17 @@
       .p-navigation__link {
         color: #e1283b;
       }
+
+      .p-navigation__icon {
+        fill: #e1283b;
+      }
+
     }
   }
 
   .p-navigation__link {
     font-weight: 700;
-    color: #333;
+    color: #272727;
     text-decoration: none;
     display:block;
     padding: 0.5rem 1rem;
@@ -69,6 +89,8 @@
       border-radius: 1rem;
       font-size: 1rem;
       cursor: pointer;
+      font-family: Helvetica, sans-serif;
+      font-weight: 700;
 
       &:hover {
         background-color: rgba(0,0,0,.05);
