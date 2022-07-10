@@ -12,6 +12,7 @@ layout: "base.html"
 
 <h2>Posts</h2>
 <div class="p-cards">
+  {% for post in collections.my-work reversed %}
   <a href='{{ post.url | url }}' class="p-card">
     <h4 class="p-card__title">{{ post.data.title }}</h4>
   </a>
