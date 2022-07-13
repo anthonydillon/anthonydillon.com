@@ -4,7 +4,7 @@
   <subtitle>I love to learn and teach others, I&#39;m always looking for new ways to improve myself. I&#39;m a big fan of the leanweb community.</subtitle>
   <link href="https://anthonydillon.com/feed.xml" rel="self"/>
   <link href="https://anthonydillon.com/"/>
-  <updated>2022-07-10T23:14:25Z</updated>
+  <updated>2022-07-13T16:55:49Z</updated>
   <id>https://anthonydillon.com/</id>
   <author>
     <name>Anthony Dillon</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>Ant FM</title>
     <link href="https://anthonydillon.com/ant-fm/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/ant-fm/</id>
     <content type="html">&lt;p&gt;The idea for Ant.FM came from me switching from listening to music on the free Spotify (with ads) to listening to music on Youtube. Youtube provides most music ad free, but requires me to re-visit the web page to select the next track.&lt;/p&gt;
 &lt;p&gt;I wanted to build a site that can queue up youtube video’s and play them one after another. Whether it is the full album, top tracks from an artist or a playlist the user has created.&lt;/p&gt;
@@ -24,7 +24,7 @@
   <entry>
     <title>Handling “class” attribute in Beautifulsoup</title>
     <link href="https://anthonydillon.com/handling-class-attribute-in-beautifulsoup/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/handling-class-attribute-in-beautifulsoup/</id>
     <content type="html">&lt;p&gt;Using the docs it can be difficult to spot the syntax to find an element with a class. Here is how you refine your search to the elements with my-image class.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;img = soup.findAll(&amp;quot;img&amp;quot;, { &amp;quot;class&amp;quot; : &amp;quot;my-image&amp;quot; })
@@ -39,7 +39,7 @@
   <entry>
     <title>Leading distributed teams</title>
     <link href="https://anthonydillon.com/leading-distributed-teams/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/leading-distributed-teams/</id>
     <content type="html">&lt;p&gt;Hi my name is &lt;strong&gt;Ant&lt;/strong&gt; and I have work at Canonical the company behind Ubuntu for over 10 years now. All of which I worked in the office. For the last 7 years I have been a manager of a mix of in office-based and remote team members.&lt;/p&gt;
 &lt;h2&gt;Unexpected challenge over the last 12 months&lt;/h2&gt;
@@ -92,7 +92,7 @@
   <entry>
     <title>Refocusing on 1:1s</title>
     <link href="https://anthonydillon.com/refocusing-on-1-1/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/refocusing-on-1-1/</id>
     <content type="html">&lt;p&gt;I have been grappling with the desire to improve my 1:1 meetings recently. As a manager, I want 1:1 meetings to focus on the needs of my reports and not be a status or progress report of their current work. But I don&#39;t want to burden anyone with preparing an agenda and no-agenda meeting can cause anxiety. So here are some areas I will try and touch on each week.&lt;/p&gt;
 &lt;ol&gt;
@@ -109,7 +109,7 @@
   <entry>
     <title>Surprising CSS selectors you can use today</title>
     <link href="https://anthonydillon.com/surprising-css-selectors-you-can-use-today/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/surprising-css-selectors-you-can-use-today/</id>
     <content type="html">&lt;p&gt;As of date of writing which was 2016.&lt;/p&gt;
 &lt;p&gt;While working on the Juju GUI project, I was reviewing a pull request when I spotted there were no prefixes on box-sizing. I thought I should check if they needed it before asking the requester to add them. In doing so I was surprised to find that there are a lot more CSS features with global support than I originally thought. So I trawled through the chasms of Can I use and have come out with some gems to share.&lt;/p&gt;
@@ -263,7 +263,7 @@ li:nth-child(n2) {
   <entry>
     <title>Tips and tricks</title>
     <link href="https://anthonydillon.com/tips-and-tricks/"/>
-    <updated>2022-07-10T23:14:10Z</updated>
+    <updated>2022-07-13T16:55:41Z</updated>
     <id>https://anthonydillon.com/tips-and-tricks/</id>
     <content type="html">&lt;p&gt;So I think we all have handy tips and tricks we have picked up over the years so I thought I would write them down and show you. I fully expect no one to learn something but you never know. 🤷‍♂️&lt;/p&gt;
 &lt;hr /&gt;
