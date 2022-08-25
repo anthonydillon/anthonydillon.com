@@ -16,6 +16,13 @@
           <a class="p-breadcrumb__link" href="" aria-current="page">{{ title }}</a>
         </nav>
         <h1>{{ title }}</h1>
+        <div>
+        {% for tag in tags %}
+        {% if tag != 'post' %}
+        <span class="p-badge--{{tag}}">{{ tag }}</span>
+        {% endif %}
+        {% endfor %}
+        </div>
         <article>{{ content | safe }}</article>
       </main>
     </div>
