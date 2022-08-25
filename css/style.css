@@ -277,6 +277,38 @@ h3 {
   transform: translateY(-0.25em);
 }
 
+.p-badge, .p-badge--cooking, .p-badge--ideas, .p-badge--engineering, .p-badge--management {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #666;
+}
+
+.p-badge--management {
+  background-color: #5360db;
+}
+
+.p-badge--engineering {
+  background-color: #09bd63;
+}
+
+.p-badge--ideas {
+  color: #111;
+  background-color: #FF8329;
+}
+
+.p-badge--cooking {
+  background-color: #c22e78;
+}
+
 body {
   display: block;
   margin: 0;
