@@ -56,7 +56,7 @@
 
 .p-navigation {
   background-color: #F1F1F1;
-  border-right: 1px solid #efefef;
+  border-right: 1px solid #ddd;
   padding: 4rem 0;
   height: calc(100vh - 8rem);
 }
