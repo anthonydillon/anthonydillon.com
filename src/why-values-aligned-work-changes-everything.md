@@ -118,3 +118,5 @@ best work will come from.
 ---
 
 If open source and working on tools which impact and effect millions resinates with you then I invite you to come and work with me and [join the Canonical Web Engineering team](https://canonical.com/careers/web-and-design).
+
+![Work values alignment illustration](/img/work-values.png)
