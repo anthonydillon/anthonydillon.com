@@ -4,26 +4,27 @@ layout: "base.html"
 ---
 
 <h1>Some thoughts</h1>
-<p>
+<p class="p-lead">
   I am a software developer, with a passion for building things that
   people love to use. I am working as a Director of Engineering at Canonical.
 </p>
-<p>
-  I love to learn and teach others, I'm always looking for
-  new ways to improve myself. I'm a big fan of the leanweb community.
-</p>
-<p>You can find me on <a href="https://github.com/anthonydillon">GitHub</a> and <a href="https://twitter.com/anthonydillon">Twitter</a>. <a href="/feed.xml">RSS <svg height="1.2rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="position:relative;top:3px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg></a></p>
-<hr />
 
-<div class="p-cards">
-{% for post in collections.post reversed %}
-<a href='{{ post.url | url }}' class="p-card">
-  {% for tag in post.data.tags %}
-  {% if tag != 'post' %}
-  <span class="p-badge--{{tag}}">{{ tag }}</span>
-  {% endif %}
-  {% endfor %}
-  <h4 class="p-card__title">{{ post.data.title }}</h4>
+{% include filters.html %}
+
+{% assign latest = collections.post | last %}
+<a class="p-featured" href="{{ latest.url | url }}">
+  <div class="p-featured__meta">
+    {% for tag in latest.data.tags %}{% if tag != 'post' %}<span class="p-tag p-tag--highlight">{{ tag }}</span>{% endif %}{% endfor %}
+    <span class="p-featured__label">Latest</span>
+  </div>
+  <h2 class="p-featured__title">{{ latest.data.title }}</h2>
+  <span class="p-featured__cta">
+    Read the post
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+  </span>
 </a>
-{% endfor %}
-</div>
+
+{% assign earlier_count = collections.post.size | minus: 1 %}
+{% assign posts = collections.post | slice: 0, earlier_count %}
+{% assign list_label = "Earlier posts" %}
+{% include post-list.html %}

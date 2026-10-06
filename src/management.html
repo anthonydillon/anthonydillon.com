@@ -4,22 +4,12 @@ layout: "base.html"
 ---
 
 <h1>Management</h1>
-<p>
+<p class="p-lead">
   I a manager of enginnering teams for many years. I am always learning and growning as a leader but here are some things I have learnt so far.
 </p>
 
-<hr />
+{% include filters.html %}
 
-<h2>Posts</h2>
-<div class="p-cards">
-  {% for post in collections.management reversed %}
-  <a href='{{ post.url | url }}' class="p-card">
-    {% for tag in post.data.tags %}
-    {% if tag != 'post' %}
-    <span class="p-badge--{{tag}}">{{ tag }}</span>
-    {% endif %}
-    {% endfor %}
-    <h4 class="p-card__title">{{ post.data.title }}</h4>
-  </a>
-  {% endfor %}
-</div>
+{% assign posts = collections.management %}
+{% assign list_label = "Posts" %}
+{% include post-list.html %}

@@ -4,22 +4,10 @@ layout: "base.html"
 ---
 
 <h1>My work</h1>
-<p>
+<p class="p-lead">
   I have worked on many projects I am proud of. Here are some of my favourites. They range from past to current but I have learn't something new with each of them.
 </p>
 
-<hr />
-
-<h2>Posts</h2>
-<div class="p-cards">
-  {% for post in collections.my-work reversed %}
-  <a href='{{ post.url | url }}' class="p-card">
-    {% for tag in post.data.tags %}
-    {% if tag != 'post' %}
-    <span class="p-badge--{{tag}}">{{ tag }}</span>
-    {% endif %}
-    {% endfor %}
-    <h4 class="p-card__title">{{ post.data.title }}</h4>
-  </a>
-  {% endfor %}
-</div>
+{% assign posts = collections.my-work %}
+{% assign list_label = "Posts" %}
+{% include post-list.html %}

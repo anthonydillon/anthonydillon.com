@@ -1,32 +1,28 @@
 .p-breadcrumb {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 26px;
+  font-size: 0.84375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-subtle);
 
-  .p-breadcrumb__link,
-  .p-breadcrumb__link:active,
-  .p-breadcrumb__link:visited {
-    font-weight: 700;
-    text-decoration: none;
-    color: #272727;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    position: relative;
+  &__link {
+    color: var(--color-subtle);
 
-    &:after {
-      content: "›";
-      position: absolute;
-      left: 95%;
-      top: -1rem;
-      font-weight: 100;
-      font-size: 2rem;
-      color: lighten(#272727, 40%);
+    &:hover {
+      color: var(--color-accent);
     }
+  }
 
-    &[aria-current="page"] {
-      color: #D83434;
+  &__separator {
+    color: var(--color-faint);
+  }
 
-      &:after {
-        content: "";
-      }
-    }
+  &__current {
+    color: var(--color-accent);
   }
 }

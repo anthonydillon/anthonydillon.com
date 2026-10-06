@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-  <link rel="shortcut icon" href="{{ '/img/favicon.png' | url }}">
+  {% include head.html %}
 </head>
 <body>
   <div class="layout">
     {% include navigation.njk %}
-    <main class="l-main">{{ content | safe }}</main>
+    <main class="l-main">
+      <div class="l-content">{{ content | safe }}</div>
+    </main>
   </div>
 </body>
 </html>

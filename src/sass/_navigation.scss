@@ -1,100 +1,136 @@
 .p-navigation {
-  background-color: #F1F1F1;
-  border-right: 1px solid #ddd;
-  padding: 4rem 0;
-  height: calc(100vh - 8rem);
+  position: sticky;
+  top: 0;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  height: 100vh;
+  padding: 44px 32px 36px;
+  box-sizing: border-box;
+  background: var(--color-sidebar);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
 
-  @media screen and (min-width: $navigation-threshold + 1) {
-    position: fixed;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
   }
 
-  .p-navigation__nav {
+  &__logo {
+    display: block;
+    width: 186px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+
+  &__nav {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    height: calc(100% - 3rem);
-    margin-top: 2rem;
-    padding: 0 2.5rem;
+    gap: 40px;
+    margin-top: 52px;
   }
 
-  .p-navigation__logo {
-    padding: 0 2.5rem;
-  }
-
-  .p-navigation__image {
-    width: 90%;
-    max-width: 200px;
-  }
-
-  .p-navigation__icon {
-    height: 1.3rem;
-    width: 1.3rem;
-    position: relative;
-    top: 3px;
-    padding-right: .5rem;
-  }
-
-  .p-navigation__items {
-    padding-left: 0;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0 0 0 -10px;
+    padding: 0;
     list-style: none;
-    width: 100%;
   }
 
-  .p-navigation__item {
-    border-left: 3px solid transparent;
-    margin-bottom: .5rem;
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 9px 10px;
+    border-radius: 7px;
+    font-size: 1.03125rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #262524;
+    transition: background var(--transition), color var(--transition);
 
-    &[aria-current]{
-      border-left: 3px solid #e1283b;
-
-      .p-navigation__link {
-        color: #e1283b;
-      }
-
-      .p-navigation__icon {
-        fill: #e1283b;
-      }
-
+    &:hover,
+    &[aria-current="page"] {
+      background: var(--color-hover);
+      color: var(--color-accent);
     }
   }
 
-  .p-navigation__link {
-    font-weight: 700;
-    color: #272727;
-    text-decoration: none;
-    display:block;
-    padding: 0.5rem 1rem;
-    width: calc(100% - 2rem);
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    transition: color var(--transition);
 
     &:hover {
-      background-color: rgba(0,0,0,.05);
+      color: var(--color-indigo);
     }
   }
 
-  .p-navigation__toggle {
+  &__toggle {
     display: none;
+    padding: 7px 15px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: #ffffff;
+    font: 600 0.84375rem/1.2 var(--font-sans);
+    color: var(--color-ink);
+    cursor: pointer;
 
-    @media screen and (max-width: $navigation-threshold) {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+
+  @media screen and (max-width: $navigation-threshold) {
+    position: static;
+    height: auto;
+    gap: 0;
+    padding: 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+
+    &__logo {
+      width: 130px;
     }
 
-    .p-navigation__toggle-button {
-      background: transparent;
-      padding: .6rem .5rem .5rem;
-      border: 1px solid #999;
-      border-radius: 1rem;
-      font-size: 1rem;
-      cursor: pointer;
-      font-family: Helvetica, sans-serif;
-      font-weight: 700;
+    &__toggle {
+      display: inline-block;
+    }
 
-      &:hover {
-        background-color: rgba(0,0,0,.05);
+    &__nav {
+      display: none;
+      margin-top: 24px;
+      gap: 24px;
+
+      .is-open & {
+        display: flex;
       }
+    }
+
+    &__items {
+      margin-left: 0;
     }
   }
 }

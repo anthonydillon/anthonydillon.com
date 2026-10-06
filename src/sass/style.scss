@@ -1,21 +1,10 @@
 $navigation-threshold: 1000px;
 
+@import "tokens";
+@import "typography";
 @import "layout";
 @import "navigation";
-@import "article";
-@import "typography";
 @import "breadcrumbs";
-@import "cards";
-@import "badge";
-
-body {
-  display: block;
-  margin: 0;
-}
-
-hr {
-  background-color: #F79D9D;
-  height: 4px;
-  border: none;
-  margin: 2.5rem 0;
-}
+@import "tags";
+@import "posts";
+@import "article";

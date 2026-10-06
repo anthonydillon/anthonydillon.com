@@ -1,0 +1,14 @@
+{% comment %}Expects `posts` (oldest first, as Eleventy collections are) and `list_label` to be assigned before including.{% endcomment %}
+<div class="p-posts">
+  <div class="p-posts__header">
+    <span class="p-eyebrow">{{ list_label }}</span>
+  </div>
+  {% for post in posts reversed %}
+  <a class="p-posts__item" href="{{ post.url | url }}">
+    <h3 class="p-posts__title">{{ post.data.title }}</h3>
+    {% for tag in post.data.tags %}{% if tag != 'post' %}<span class="p-tag">{{ tag }}</span>{% endif %}{% endfor %}
+  </a>
+  {% else %}
+  <p class="p-posts__empty">No posts yet.</p>
+  {% endfor %}
+</div>

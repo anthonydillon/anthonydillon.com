@@ -1,38 +1,95 @@
+html,
 body {
-  font-family: Helvetica, sans-serif;
-  text-decoration: none;
-  line-height: 1.5;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #272727;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4 {
+body {
+  background: #ffffff;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-indigo);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-ink);
   font-weight: 700;
 }
 
+// Page title with the orange and indigo accent bars underneath
 h1 {
-  font-size: 2rem;
-  border-bottom: 8px solid #FF8329;
-  height: 1.3em;
-  display: inline-block;
-  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 3.25rem;
+  line-height: 1.08;
+  letter-spacing: -0.032em;
+  text-wrap: balance;
 
-  &:after {
+  &::before,
+  &::after {
     content: "";
-    height: 8px;
-    width: 100%;
-    border-bottom: 8px solid #0016E0;
-    position: absolute;
-    top: 1.3em;
-    left: 1em;
+    display: block;
+    height: 5px;
+    border-radius: 3px;
+  }
+
+  &::before {
+    order: 1;
+    width: 148px;
+    margin-top: 22px;
+    background: var(--color-accent-bright);
+  }
+
+  &::after {
+    order: 2;
+    width: 92px;
+    margin-top: 4px;
+    background: var(--color-indigo);
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2.5rem;
   }
 }
 
 h2 {
-  font-size: 1.625rem;
+  font-size: 1.8125rem;
+  line-height: 1.22;
+  letter-spacing: -0.022em;
 }
 
-h3 {
+.p-lead {
+  max-width: 620px;
+  margin: 26px 0 0;
+  font-size: 1.1875rem;
+  line-height: 1.66;
+  color: var(--color-muted);
+}
+
+.p-eyebrow {
+  font-size: 0.78125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--color-subtle);
 }

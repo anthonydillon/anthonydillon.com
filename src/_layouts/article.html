@@ -4,26 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-    <link rel="shortcut icon" href="{{ '/img/favicon.png' | url }}">
+    {% include head.html %}
   </head>
   <body>
     <div class="layout">
       {% include navigation.njk %}
-      <main class="l-main p-article">
-        <nav class="p-breadcrumb aria-label="breadcrumbs">
-          <a class="p-breadcrumb__link" href="/">Home</a>
-          <a class="p-breadcrumb__link" href="" aria-current="page">{{ title }}</a>
-        </nav>
-        <h1>{{ title }}</h1>
-        <div>
-        {% for tag in tags %}
-        {% if tag != 'post' %}
-        <span class="p-badge--{{tag}}">{{ tag }}</span>
-        {% endif %}
-        {% endfor %}
-        </div>
-        <article>{{ content | safe }}</article>
+      <main class="l-main">
+        <article class="l-content l-content--narrow p-article">
+          <nav class="p-breadcrumb" aria-label="Breadcrumbs">
+            <a class="p-breadcrumb__link" href="/">Home</a>
+            <span class="p-breadcrumb__separator" aria-hidden="true">/</span>
+            <span class="p-breadcrumb__current" aria-current="page">{{ title }}</span>
+          </nav>
+          <h1>{{ title }}</h1>
+          <div class="p-article__tags">
+            {% for tag in tags %}
+            {% if tag != 'post' %}
+            <a class="p-tag p-tag--highlight" href="/{{ tag }}/">{{ tag }}</a>
+            {% endif %}
+            {% endfor %}
+          </div>
+          <div class="p-article__body">{{ content | safe }}</div>
+        </article>
       </main>
     </div>
   </body>

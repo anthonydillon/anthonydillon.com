@@ -13,7 +13,7 @@ The textbook answer is often vague about growth, new challenges, or expanding yo
 set. But when you ask enough engineers and actually listen to what they say, a different pattern
 emerges. Beneath the polished phrasing, the real answer is almost always the same.
 
-_The work stopped meaning something._
+> _The work stopped meaning something._
 
 ## The project-values problem — and what it reveals
 
@@ -112,11 +112,14 @@ experience, that doing good work is much harder when you don't respect what you'
 
 The casino problem, it turns out, is actually quite simple.
 
-If you wouldn't use it, or wouldn't be proud to have built it, it's probably not where your
-best work will come from.
+> If you wouldn't use it, or wouldn't be proud to have built it, it's probably not where your
+> best work will come from.
 
----
+<aside class="p-callout">
+<div class="p-callout__label">Work with me</div>
 
 If open source and working on tools which impact and effect millions resinates with you then I invite you to come and work with me and [join the Canonical Web Engineering team](https://canonical.com/careers/web-and-design).
+
+</aside>
 
 ![Work values alignment illustration](/img/work-values.png)

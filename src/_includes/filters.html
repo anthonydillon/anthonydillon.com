@@ -1,0 +1,7 @@
+<ul class="p-filters" aria-label="Filter posts by category">
+  <li><a class="p-filters__link" href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>All</a></li>
+  <li><a class="p-filters__link" href="/engineering/" {% if page.url == "/engineering/" %}aria-current="page"{% endif %}>Engineering</a></li>
+  <li><a class="p-filters__link" href="/management/" {% if page.url == "/management/" %}aria-current="page"{% endif %}>Management</a></li>
+  <li><a class="p-filters__link" href="/cooking/" {% if page.url == "/cooking/" %}aria-current="page"{% endif %}>Cooking</a></li>
+  <li><a class="p-filters__link" href="/ideas/" {% if page.url == "/ideas/" %}aria-current="page"{% endif %}>Ideas</a></li>
+</ul>

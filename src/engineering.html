@@ -4,22 +4,12 @@ layout: "base.html"
 ---
 
 <h1>Engineering</h1>
-<p>
+<p class="p-lead">
   As a developer engineering solutions for over 20 years I have thoughts on the topic and ways I prefer to work. I do less day to day coding but I feel I have a good sense for complexity and helping to define a elegant solution.
 </p>
 
-<hr />
+{% include filters.html %}
 
-<h2>Posts</h2>
-<div class="p-cards">
-  {% for post in collections.engineering reversed %}
-  <a href='{{ post.url | url }}' class="p-card">
-    {% for tag in post.data.tags %}
-    {% if tag != 'post' %}
-    <span class="p-badge--{{tag}}">{{ tag }}</span>
-    {% endif %}
-    {% endfor %}
-    <h4 class="p-card__title">{{ post.data.title }}</h4>
-  </a>
-  {% endfor %}
-</div>
+{% assign posts = collections.engineering %}
+{% assign list_label = "Posts" %}
+{% include post-list.html %}

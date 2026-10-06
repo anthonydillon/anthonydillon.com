@@ -1,0 +1,63 @@
+// Small uppercase category pill
+.p-tag {
+  display: inline-block;
+  padding: 4px 11px 5px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-chip);
+  font-size: 0.71875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-muted);
+
+  &--highlight {
+    padding: 5px 12px 6px;
+    border-color: var(--color-indigo-border);
+    background: var(--color-indigo-tint);
+    font-size: 0.78125rem;
+    color: var(--color-indigo);
+  }
+}
+
+a.p-tag--highlight:hover {
+  border-color: var(--color-indigo);
+  color: var(--color-indigo);
+}
+
+// Category filter chips
+.p-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 38px 0 0;
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    display: inline-block;
+    padding: 7px 15px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: #ffffff;
+    font-size: 0.84375rem;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    color: var(--color-muted);
+    transition: border-color var(--transition), color var(--transition);
+
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+
+    &[aria-current="page"] {
+      border-color: var(--color-ink);
+      background: var(--color-ink);
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
